@@ -1,7 +1,44 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { AppComponent } from './app.component';
+import { SIPCalculatorComponent } from './sipcalculator/sipcalculator.component';
+import { BComponent } from './b/b.component';
+import { CalculatorsComponent } from './calculators/calculators.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BMRCalculatorComponent } from './bmr-calculator/bmr-calculator.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: AppComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'calculators',
+    children: [
+      {
+        path: 'sip',
+        pathMatch: 'full',
+        component: SIPCalculatorComponent 
+      },
+      {
+        path: 'bmr',
+        pathMatch: 'full',
+        component: BMRCalculatorComponent 
+      }
+    ]
+    
+  },
+  {
+    path: 'something-else',
+    component: BComponent
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
