@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CalculatorsComponent } from './calculators/calculators.component';
 import { BMRCalculatorComponent } from './bmr-calculator/bmr-calculator.component';
+import { WalkingCalorieCalculatorComponent } from './walking-calorie-calculator/walking-calorie-calculator.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BMRCalculatorComponent } from './bmr-calculator/bmr-calculator.componen
     HeaderComponent,
     PageNotFoundComponent,
     CalculatorsComponent,
-    BMRCalculatorComponent
+    BMRCalculatorComponent,
+    WalkingCalorieCalculatorComponent
   ],
   imports: [
     BrowserModule,

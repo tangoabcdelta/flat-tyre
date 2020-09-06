@@ -7,6 +7,8 @@ import { BComponent } from './b/b.component';
 import { CalculatorsComponent } from './calculators/calculators.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BMRCalculatorComponent } from './bmr-calculator/bmr-calculator.component';
+import { WalkingCalorieCalculatorComponent } from './walking-calorie-calculator/walking-calorie-calculator.component';
+
 
 const routes: Routes = [
   {
@@ -26,6 +28,11 @@ const routes: Routes = [
         path: 'bmr',
         pathMatch: 'full',
         component: BMRCalculatorComponent 
+      },
+      {
+        path: 'walking-calorie-calculator',
+        pathMatch: 'full',
+        component: WalkingCalorieCalculatorComponent 
       }
     ]
     

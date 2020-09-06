@@ -1,0 +1,176 @@
+<div class="walking-calorie-calculator">
+  <div class="container-fluid">
+    <h1 class="">Walking Calorie Calculator</h1>
+    <h3 class="">Calculates the exercise mets and calories burned  by walking.</h3>
+    
+    <form>   
+      <div class="form-group form-row">
+        <label class="form-check-label col" for="unit">Unit</label>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="unit" id="unit" value="1" checked>
+            <label class="form-check-label" for="unit">SI (m / cm / kg)</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="unit" id="unit" value="2" disabled>
+            <label class="form-check-label" for="unit">Imperial (ft / inches / lbs)</label>
+          </div>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="age">Age (in years)</label>
+          <input type="text" name="age" id="age" value="" size="4" autocomplete="on" class="form-control">
+        </div>
+        <div class="form-group col">
+          <label for="height">Height ({{'in cm'}})</label>
+          <input type="text" name="height" id="height" value="" size="6" autocomplete="on" class="form-control">
+        </div>
+        <div class="col-sm-7"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="height">Weight ({{'in KGs'}})</label>
+          <input type="text" name="height" id="height" value="" size="6" autocomplete="on" class="form-control">
+        </div>
+        <div class="form-group col">
+          <label for="duration">Duration (in minutes)</label>
+          <input type="text" name="duration" id="duration" value="" size="6" autocomplete="on" class="form-control">
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      <div class="form-row">
+        
+      </div>
+      <div class="form-row"></div>
+    
+      
+     
+      
+      
+      <div class="form-group">
+        <label for="walkingSpeed">Walking speed</label>
+        <select name="walkingSpeed" id="walkingSpeed" class="form-control">
+          <option value="1" selected="">less than 2.0mph (3.2km/h)</option>
+          <option value="2">2.0mph (3.2km/h)</option>
+          <option value="3">2.5mph (4.0km/h)</option>
+          <option value="4">3.0mph (4.8km/h)</option>
+          <option value="5">3.5mph (5.6km/h)</option>
+          <option value="6">4.0mph (6.4km/h)</option>
+          <option value="7">4.5mph (7.2km/h)</option>
+          <option value="8">5.0mph (8.0km/h)</option>
+        </select>
+      </div>
+       <div class="form-group">
+        <label for="speed">Mets/h</label>
+        <input type="text" name="speed" id="speed" value="2.0" size="6" autocomplete="on" class="form-control">
+      </div>
+      <div class="form-group form-row">
+        <label class="form-check-label col-sm-4" for="">Sex (biological)</label>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sex" id="sex" value="1">
+            <label class="form-check-label" for="sex">Female</label>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sex" value="2">
+            <label class="form-check-label" for="sex">Male</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Submit">
+        <input type="reset" class="btn btn-default" value="Clear">
+        <input type="button" class="btn btn-secondary" value="Save">
+      </div>
+      <div class="form-group">
+        
+      </div>
+    </form>
+
+    <hr />
+
+    <div class="container" style="background-color: #fafafa;">      
+      <div class="form-group">
+        <label for="bmr">BMR</label>
+        <input type="text" name="bmr" id="bmr" value="" autocomplete="on" class="form-control">
+        <small>kcal/day</small>
+      </div>
+      <div class="form-group">
+        <label for="exercise">Exercise</label>
+        <input type="text" name="exercise" id="exercise" value="" size="6" autocomplete="on" class="form-control">
+        <small>kcal/day</small>
+      </div>
+      <div class="form-group form-row">
+        <label for="height">Walking distance</label>
+        <div class="col">
+          <input type="text" name="height" id="height" value="" size="6" autocomplete="on" class="form-control">
+          <small>km/day</small>
+        </div>
+        <div class="col-sm-1">
+          <span>OR</span>
+        </div>
+        <div class="col">
+         <input type="text" name="height" id="height" value="" size="6" autocomplete="on" class="form-control">
+         <small>mile/day</small>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="duration">Duration (in minutes)</label>
+        <input type="text" name="duration" id="duration" value="" size="6" autocomplete="on" class="form-control">
+        <small>kcal/day</small>
+      </div>
+      <div class="form-group">
+        <label for="duration">Duration (in minutes)</label>
+        <input type="text" name="duration" id="duration" value="" size="6" autocomplete="on" class="form-control">
+        <small>kcal/day</small>
+      </div>
+    </div>
+
+    <div class="alert alert-warning" role="alert">
+        <h4 class="alert-warning">Caution:</h4>
+        <p>This site shall not be liable for any damages arising out of the use of any tools in it including the one in this page.</p>
+        <hr>
+        <p class="mb-0">The <strong>METS</strong> values are provided by <strong>"The Compendium of Physical Activities 2011".</strong>
+        <br />
+          <code>Calorie(Kcal) ＝ BMR x Mets / 24 x hour </code>
+        </p>
+    </div>
+    Basal Metabolic Rate
+
+    What affects my BMR?
+
+    Anything that results in an increase to your metabolic rate will increase your BMR. This includes exercise, stress, fear and illnesses.
+
+    Your BMR is relative to body mass, age, weight and height. It is also affected by your gender; as it widely regarded that men need more calories than women.
+
+    <table id="rlink" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td class="caption">Related links</td>
+        </tr>
+        <tr>
+          <td class="body"><a href="https://sites.google.com/site/compendiumofphysicalactivities/Activity-Categories/walking" target="_blank">The Compendium of Physical Activities</a></td>
+        </tr>
+        <tr>
+          <td class="body"><a href="/exec/system/1350959101" target="_blank">Running Calorie Calculator</a></td>
+        </tr>
+        <tr>
+          <td class="body"><a href="/exec/system/1350958587" target="_blank">Bicycling Calorie Calculator</a></td>
+        </tr>
+        <tr>
+          <td class="body"><a href="/exec/system/1500880113" target="_blank">Swimming Calorie Calculator</a></td>
+        </tr>
+        <tr>
+          <td class="body"><a href="/exec/system/1500877398" target="_blank">Sports Calorie Calculator</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
